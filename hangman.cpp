@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 #include<windows.h>
 #define ll long long
 char s[1005];
