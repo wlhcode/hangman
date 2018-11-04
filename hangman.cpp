@@ -61,8 +61,8 @@ void game(){
 		for(int i=0;i<len;i++){
 			bool test=true;
 			for(int j=0;j<30;j++){
-				if(guess[j]==s[i]){
-					cout<<guess[j]<<" ";
+				if(guess[j]==s[i]||guess[j]==s[i]+32||guess[j]==s[i]-32){
+					cout<<s[i]<<" ";
 					test=false;
 					break;
 				}
@@ -79,7 +79,7 @@ void game(){
 		cout<<"Please enter your guess: ";
 		cin>>guess[number];
 		for(int i=0;i<len;i++){
-			if(s[i]==guess[number]){
+			if(s[i]==guess[number]||guess[number]==s[i]+32||guess[number]==s[i]-32){
 				correct=true;
 				break;
 			}
