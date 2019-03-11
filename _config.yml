@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: Hangman
+description: The game that enhances your friendship.
+show_downloads: true
